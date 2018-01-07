@@ -1,0 +1,55 @@
+#left-panel
+  float: left
+  height: 100%
+  min-width: 412px
+  max-width: 30%
+  color: white
+  background-color: #323232
+  overflow-y: scroll
+  padding: 16px
+  #header
+    font-size: 60px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  #form
+    &>.options
+      margin-top: 8px
+      display: flex
+      justify-content: flex-start
+      div
+        display: flex
+        flex-direction: column
+        text-align: left
+        margin-right: 8px
+  .list-title
+    margin-top: 8px
+    text-align: left
+    width: 100%
+    border-bottom: 2px solid white
+    span
+      font-size: 24px
+      text-transform: uppercase
+    .select
+      display: inline-block
+      float: right
+      padding: 0 4px
+      margin-left: 2px
+      margin-top: 6px
+      transition: all 0.25s linear 0s
+      cursor: pointer
+      &:hover
+        background-color: white
+        color: #323232
+        border-radius: 4px
+  .list-kanji
+    display: flex
+    flex-wrap: wrap
+    margin-top: 8px
+    font-size: 18px
+    &>div
+      cursor: pointer
+      margin-right: 1px
+      margin-bottom: 1px
+      &.active
+        color: #b53c3f
